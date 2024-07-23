@@ -141,6 +141,7 @@ def test_multiple_sampling_params(llm: LLM):
     outputs = llm.generate(PROMPTS, sampling_params=None)
     assert len(PROMPTS) == len(outputs)
 
+
 def test_chat():
 
     llm = LLM(model=MODEL_NAME)
